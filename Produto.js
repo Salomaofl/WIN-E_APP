@@ -33,7 +33,6 @@ export default function Produto({ navigation }) {
       <View style={styles.infoContainer}>
         <View style={styles.infoItem}>
           <Text style={styles.infoLabel}>Nome: Fonte Regia Chianti</Text>
-          <Text style={styles.infoValue}>Produto Exemplo</Text>
         </View>
         <View style={styles.infoItem}>
           <Text style={styles.infoLabel}>Preço:</Text>
