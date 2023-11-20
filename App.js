@@ -6,6 +6,8 @@ import Pais from './Pais.js'
 import Card from './Card.js'
 import Uva from './Uva.js'
 import Carrinho from './Carrinho.js'
+import Harmonizacao from './Harmonizacao.js'
+import Finalizar from './Finalizar.js'
 
 
 
@@ -20,9 +22,11 @@ const App = () => {
         <Stack.Screen name="Pais" component={Pais} />
         <Stack.Screen name="Uva" component={Uva} />
          <Stack.Screen name="Produto" component={Produto} />
+         <Stack.Screen name="Harmonizacao" component={Harmonizacao} />
          <Stack.Screen name="Carrinho" component={Carrinho} />
+         <Stack.Screen name="Finalizar" component={Finalizar} />
       </Stack.Navigator>
-    </NavigationContainer>
+    </NavigationContainer> 
   );
 }
 

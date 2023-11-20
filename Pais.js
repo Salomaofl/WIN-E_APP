@@ -11,7 +11,7 @@ export default function Pais({ navigation }) {
   return (
     <View style={styles.container}>
       <View style={styles.imageContainer}>
-        <Image source={require('./logo.png')} style={styles.image} />
+        <Image source={require('./Paises.JPG')} style={styles.image} />
         <Text style={styles.description}>Pais produtor</Text>
       </View>
       <View style={styles.buttonContainer}>

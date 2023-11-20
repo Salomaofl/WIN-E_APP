@@ -16,23 +16,23 @@ export default function Harmonizacao({ navigation }) {
     <View style={styles.container}>
       <View style={styles.imageContainer}>
         <Image
-          source={require('./logo.png')}
+          source={require('./Queijos.JPG')}
           style={styles.image}
         />
-        <Text style={styles.description}>Pais produtor</Text>
+        <Text style={styles.description}>Harmonização</Text>
       </View>
       <View style={styles.buttonContainer}>
         <TouchableOpacity style={styles.button} onPress={() => handleCountrySelection('Produto')}>
-          <Text style={styles.buttonText}>UVA 1</Text>
+          <Text style={styles.buttonText}>Carne Vermelha</Text>
         </TouchableOpacity>
         <TouchableOpacity style={styles.button} onPress={() => handleCountrySelection('Uva 2')}>
-          <Text style={styles.buttonText}>UVA 2</Text>
+          <Text style={styles.buttonText}>Frutos do Mar</Text>
         </TouchableOpacity>
         <TouchableOpacity style={styles.button} onPress={() => handleCountrySelection('Argentina')}>
-          <Text style={styles.buttonText}>UVA 3</Text>
+          <Text style={styles.buttonText}>Queijos</Text>
         </TouchableOpacity>
         <TouchableOpacity style={styles.button} onPress={() => handleCountrySelection('Uruguai')}>
-          <Text style={styles.buttonText}>UVA 4</Text>
+          <Text style={styles.buttonText}>Sobremesas</Text>
         </TouchableOpacity>
       </View>
     </View>

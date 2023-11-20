@@ -11,14 +11,14 @@ export default function Carrinho({ navigation }) {
   const [cartItems, setCartItems] = useState([
     {
       id: 1,
-      name: 'Produto Exemplo 1',
-      price: 99.99,
+      name: 'Fonte Regia Chianti',
+      price: 60.00,
     },
-    {
-      id: 2,
-      name: 'Produto Exemplo 2',
-      price: 79.99,
-    },
+    // {
+    //   id: 2,
+    //   name: 'Produto Exemplo 2',
+    //   price: 79.99,
+    // },
   ]);
 
   const calculateTotal = () => {
@@ -35,8 +35,8 @@ export default function Carrinho({ navigation }) {
   };
 
   const handleFinishPurchase = () => {
-    // Implemente a lógica para finalizar a compra aqui
-    console.log('Compra finalizada');
+     navigation.navigate('Finalizar');
+    
   };
 
   return (

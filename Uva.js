@@ -15,23 +15,23 @@ export default function Uva({ navigation }) {
     <View style={styles.container}>
       <View style={styles.imageContainer}>
         <Image
-          source={require('./logo.png')}
+          source={require('./Uvas.JPG')}
           style={styles.image}
         />
-        <Text style={styles.description}>Pais produtor</Text>
+        <Text style={styles.description}>Tipos de Uva</Text>
       </View>
       <View style={styles.buttonContainer}>
         <TouchableOpacity style={styles.button} onPress={() => handleCountrySelection('Produto')}>
-          <Text style={styles.buttonText}>UVA 1</Text>
+          <Text style={styles.buttonText}>Chardonay</Text>
         </TouchableOpacity>
         <TouchableOpacity style={styles.button} onPress={() => handleCountrySelection('Uva 2')}>
-          <Text style={styles.buttonText}>UVA 2</Text>
+          <Text style={styles.buttonText}>Carenete Sauvignon</Text>
         </TouchableOpacity>
         <TouchableOpacity style={styles.button} onPress={() => handleCountrySelection('Argentina')}>
-          <Text style={styles.buttonText}>UVA 3</Text>
+          <Text style={styles.buttonText}>Merlot</Text>
         </TouchableOpacity>
         <TouchableOpacity style={styles.button} onPress={() => handleCountrySelection('Uruguai')}>
-          <Text style={styles.buttonText}>UVA 4</Text>
+          <Text style={styles.buttonText}>Tempranillo</Text>
         </TouchableOpacity>
       </View>
     </View>

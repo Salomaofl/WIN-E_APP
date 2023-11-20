@@ -12,7 +12,7 @@ export default function Card({ navigation }) {
         navigation.navigate('Uva');
         break;
       case 3:
-        navigation.navigate('PaginaCard3');
+        navigation.navigate('Harmonizacao');
         break;
       default:
         break;
@@ -26,17 +26,17 @@ export default function Card({ navigation }) {
   return (
     <View style={styles.container}>
       <TouchableOpacity style={styles.card} onPress={() => handleCardPress(1)}>
-        <Image source={require('./logo.png')} style={styles.cardImage} />
-        <Text style={styles.cardText}>Selecione por Pais</Text>
+        <Image source={require('./IMG_2635.JPG')} style={styles.cardImage} />
+        <Text style={styles.cardText}>Selecione por País</Text>
       </TouchableOpacity>
 
       <TouchableOpacity style={styles.card} onPress={() => handleCardPress(2)}>
-        <Image source={require('./logo.png')} style={styles.cardImage} />
-        <Text style={styles.cardText}>Selecione por tipo de uva</Text>
+        <Image source={require('./Uva.jpg')} style={styles.cardImage} />
+        <Text style={styles.cardText}>Selecione por tipo de Uva</Text>
       </TouchableOpacity>
 
       <TouchableOpacity style={styles.card} onPress={() => handleCardPress(3)}>
-        <Image source={require('./logo.png')} style={styles.cardImage} />
+        <Image source={require('./Queijo.JPG')} style={styles.cardImage} />
         <Text style={styles.cardText}>Selecione por Harmonização</Text>
       </TouchableOpacity>
 

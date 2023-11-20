@@ -2,6 +2,7 @@ import React from 'react';
 import { View, Text, StyleSheet, Image, TouchableOpacity } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import Carrinho from './Carrinho.js'
 
 export default function Produto({ navigation }) {
   const handleBuyPress = () => {
@@ -15,29 +16,28 @@ export default function Produto({ navigation }) {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Produto Exemplo</Text>
+      <Text style={styles.title}>Fonte Regia Chianti</Text>
 
       <Image
-        source={require('./logo.png')} 
+        source={require('./fonteRegia.jpeg')} 
         style={styles.productImage}
       />
 
       <View style={styles.descriptionContainer}>
         <Text style={styles.descriptionText}>Descrição do Produto:</Text>
         <Text>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet
-          lorem vel odio vestibulum convallis eu ac metus.
+          Com Fonte Regia é possível explorar a clássica região de Chianti, que possui uma das mais belas paisagens da Toscana e também uma excelente reputação em função dos vinhos que produz. Este é um exemplar que prova isso por meio de goles frutados e boa acidez.
         </Text>
       </View>
 
       <View style={styles.infoContainer}>
         <View style={styles.infoItem}>
-          <Text style={styles.infoLabel}>Nome:</Text>
+          <Text style={styles.infoLabel}>Nome: Fonte Regia Chianti</Text>
           <Text style={styles.infoValue}>Produto Exemplo</Text>
         </View>
         <View style={styles.infoItem}>
           <Text style={styles.infoLabel}>Preço:</Text>
-          <Text style={styles.infoValue}>R$ 99,99</Text>
+          <Text style={styles.infoValue}>R$ 60,00</Text>
         </View>
       </View>
 
